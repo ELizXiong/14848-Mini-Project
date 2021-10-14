@@ -25,10 +25,26 @@ C. create project on GCP, enable container registry, and deploy Docker Images pu
    
    <img width="705" alt="Screen Shot 2021-10-14 at 5 35 21 PM" src="https://user-images.githubusercontent.com/60122319/137398865-d1df5de7-d12e-45ca-86d1-0a831c0853d3.png">
 
+D. create a Kubernetes cluster:
+   $ gcloud container clusters create --machine-type n1-standard-2 --num-nodes 2 --zone us-central1-a --cluster-version latest miniprojectcluster
 
+E. Deploy container images to GKE
 
+<img width="1059" alt="Screen Shot 2021-10-14 at 5 37 57 PM" src="https://user-images.githubusercontent.com/60122319/137399152-92ba07d3-168a-4c21-963e-d0a173344e9f.png">
+
+F. Configure and edit yaml, add port and env information.
+   for sa-web-app-deployment, add following to spec: container:  
+  env:
+    - name: SA_LOGIC_API_URL
+      value: "http://{sa_web_app_ip}/5000"
+  ports:
+    - containerPort: 8080
+
+G. Expose deployments
   
+<img width="1266" alt="Screen Shot 2021-10-14 at 5 46 38 PM" src="https://user-images.githubusercontent.com/60122319/137400098-e1b169dd-d094-4e7c-8fd2-7fd5566e3582.png">
 
+F. Check and run the app on external endpoints
 
 
 ## Docker Hub Images URLs
