@@ -59,4 +59,8 @@ F. Check and run the app on external endpoints
 3.	https://hub.docker.com/repository/docker/elizxiong/sentiment-analysis-web-app
 
     docker pull elizxiong/sentiment-analysis-web-app
+    
+## Project Video
+
+Please see a short walkthrough presentation video of this project
       
