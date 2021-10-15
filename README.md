@@ -63,4 +63,6 @@ F. Check and run the app on external endpoints
 ## Project Video
 
 Please see a short walkthrough presentation video of this project in the folder: https://github.com/ELizXiong/14848-Mini-Project/blob/main/Sentiment-Analysis/project%20walkthrough.mp4 
+
+If the file cannot be viewed properly, you can also watch it on YouTube: https://youtu.be/sZXyRLO-yUY 
       
